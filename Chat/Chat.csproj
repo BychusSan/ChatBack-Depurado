@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7d751572-a6de-472c-911a-150bda08158f</UserSecretsId>
+
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.25.1" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.59.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.59.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
+		<PackageReference Include="Serilog.Sinks.MSSqlServer" Version="6.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="wwwroot\uploads\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="wwwroot\dist\bootstrap-icons.bfa90bda92a84a6a.woff2" />
+	  <None Include="wwwroot\dist\Inter-italic.var.958a0b9742fb3ae8.woff2" />
+	  <None Include="wwwroot\dist\Inter-roman.var.b2129c009ce46d43.woff2" />
+	  <None Include="wwwroot\dist\main.2f7aef60b6080dca.js" />
+	  <None Include="wwwroot\dist\main.5d66516d8812b431.js" />
+	  <None Include="wwwroot\dist\main.768fe33dd9ea7763.js" />
+	  <None Include="wwwroot\dist\main.a4f328c5e38c6e2f.js" />
+	  <None Include="wwwroot\dist\main.c72a4846a863b484.js" />
+	  <None Include="wwwroot\dist\polyfills.ed30c46e11645b30.js" />
+	  <None Include="wwwroot\dist\primeicons.943ab24c43224d29.svg" />
+	  <None Include="wwwroot\dist\primeicons.ba3f916dfb64be8c.woff2" />
+	  <None Include="wwwroot\dist\runtime.15b074f3007ec5a7.js" />
+	  <None Include="wwwroot\dist\scripts.681fd9592353ec48.js" />
+	</ItemGroup>
+</Project>
